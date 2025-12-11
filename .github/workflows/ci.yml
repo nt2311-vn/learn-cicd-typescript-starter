@@ -14,5 +14,5 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
-      - name: Force failure
-        run: (exit 1)
+      - name: Check node version
+        run: node --version
